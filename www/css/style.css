@@ -93,28 +93,151 @@ button {
 .text-center {
 	text-align: center;
 }
+
 .text-right {
 	text-align: right;
 }
+
+.text-left {
+    text-align: left;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 .bg-black {
 	background-color: #111;
 }
+
+
 /* Default classes end */
 /* Default component start */
+/* Header start */
+#header {
+    /* background-color: #001122; */
+    overflow: hidden;
+	padding: 30px 0;
+	font-size: .73rem;
+	letter-spacing: .3em;
+    line-height: 2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#header .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+} 
+
+#header .logo {
+    float: left;
+    line-height: 0;
+    margin-right: 120px;
+}
+
+#header .logo img {
+    height: 100px;
+}
+
+#header .header-nav {
+    float: right;
+}
+
+#header li {
+    float: left;
+}
+
+#header .header-nav li + li {
+    margin-left: 35px;
+}
+/* Header end */
+/* Inner start */
+.inner {
+    background: url('../img/inner-bg.jpg') no-repeat center / cover;
+    height: 100vh;
+    padding: 90px 0 15px;
+}
+
+.inner::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+
+.inner-content {
+	/* TBD */
+     max-width: 960px;
+    /* font-family: 'debbyscript', sans-serif; */
+    line-height: 4.17rem;
+    display: inline-block;
+    vertical-align: middle;
+    /* == start: tried another approach to vertical alignement== */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* == end: tried another approach to vertical alignement== */
+
+}
+
+.inner-title h1 {
+    font-size: 1.27rem;
+	display: inline-block;
+	font-weight: normal;
+	
+}
+
+.inner-title h1 span {
+	font-size: 2rem;
+	letter-spacing: 1.7em;
+	text-transform: uppercase;
+    margin-bottom: 100px;
+    display: inline-block;  
+}
+
+/* Inner end */
+
+
 .default-section {
 	padding: 135px 0;
 }
 .btn {
 	/* общие стили для всех кнопок */
+	display: inline-block;
+	/* font-size: 1.17rem; */
+	letter-spacing: .2em;
+	text-transform: uppercase;
+    /* font-family: 'mullerregular', sans-serif; */
+	/* width: 50%; */
+	
+    /* line-height: 3.67rem; */
+    color: #111;
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 .btn-default {
 	/* стили для черной кнопки */
+	padding: 0 20px;
+	font-size: .87rem;
+	line-height: 2.33rem;
 }
 .btn-large {
 	/* для кнопок серых и больших */
+	padding: 0 40px;
+	font-size: .93rem;
+	line-height: 2.67rem;
 }
 .btn-small {
- 	/* для мал кнопок*/
+	 /* для мал кнопок*/
+	padding: 0 15px;
+	font-size: .73rem;
+	line-height: 2rem;
 }
 
 .title {
@@ -124,22 +247,45 @@ button {
 	letter-spacing: .5em;
 	font-weight: normal;
 	margin-bottom: 75px;
+	/* Add Dosis regular */
 }
 .title.title-light {
 	letter-spacing: .3em;
+	/* add Dosis light font-family */
 }
 .title.title-white {
 	color: #fff;
+	letter-spacing: .3em;
+	/* add Dosis light font-family*/
 }
 /* Default component end */
 /* Custom style start */
 /* ===== About studio start ===== */
+/* font-family: Open Sans light; */
 .about-studio .row + .row {
 	margin-top: 100px;
 }
-.team-item-info span{
+.team-item-info span {
 	display: block;
 }
+
+blockquote span {
+    font-size: .73rem;
+    line-height: 2.53rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+blockquote p {
+	font-size: 1.6rem;
+    line-height: 2.53rem;
+    /* font-family: Open Sans light; */
+}
+
+.about-studio .default-text {
+    line-height: 1.73rem;
+}
+
 /* ===== About studio end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper {
