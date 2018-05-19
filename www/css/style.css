@@ -1,3 +1,39 @@
+/* ==== Fonts start ==== */
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosislight';
+    src: url('../fonts/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==== Fonts end ==== */
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -9,7 +45,7 @@ html {
 body{
 	margin: 0;
 	color: #777;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'open_sanslight', Helvetica, sans-serif;
 }
 a{
 	color: inherit;
@@ -110,6 +146,19 @@ button {
 	background-color: #111;
 }
 
+.bg-lightgrey {
+	background-color: #e5e5e5;
+}
+
+.bg-grey {
+    background-color: #cfcfcf;
+}
+.bg-darkgrey {
+	background-color: #323232;
+}
+
+
+
 
 /* Default classes end */
 /* Default component start */
@@ -117,8 +166,10 @@ button {
 #header {
     overflow: hidden;
 	padding: 25px 0;
+	line-height: 1.67rem;
 	font-size: .73rem;
-	color: #fefefe;
+	font-family: 'open_sansregular', Helvetica, sans-serif;
+	color: rgba(255, 255, 255, .75);
 	letter-spacing: .3em;
     position: fixed;
     left: 0;
@@ -127,23 +178,24 @@ button {
 	z-index: 99;
 }
 
-#header .container {
+#header .container-fluid {
     max-width: 1560px;
     margin: 0 auto;
-    padding: 0 10px;
 } 
 
 #header .logo {
-    float: left;
+	float: left;
+	line-height: 1.67rem;
 }
 
 #header .logo img {
-	height: 1.67rem;	
+	height: 25px;
 }
 
 #header .header-nav {
 	float: right;
-	margin-top: .93rem;
+	margin-top: .47rem;
+	font-size: .73rem;
 }
 
 #header .header-nav li {
@@ -158,7 +210,7 @@ button {
 .inner {
     background: url('../img/inner-bg.jpg') no-repeat center / cover;
     height: 100vh;
-    padding: 85px 0 15px;
+    padding: 84px 0 15px;
 }
 
 .inner::before {
@@ -170,89 +222,91 @@ button {
 }
 
 .inner-content {
-	/* TBD */
     max-width: 960px;
-    /* font-family: 'debbyscript', sans-serif; */
-	color: #fefefe;
 	line-height: 4.17rem;
     display: inline-block;
     vertical-align: middle;
 }
 
 .inner-title h1 {
-    font-size: 1.27rem;
-	display: inline-block;
-	font-weight: normal;
-	
-}
-
-.inner-title h1 span {
+	font-family: 'dosisregular', Helvetica, sans-serif;
+	color: rgba(254, 254, 254, .9);
 	font-size: 2rem;
+	text-indent: 1.7em;
 	letter-spacing: 1.7em;
 	text-transform: uppercase;
-    margin-bottom: 100px;
-    display: inline-block;  
+	font-weight: normal;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.inner-description span {
+	font-size: 1.27rem;
+	color: rgba(254, 254, 254, .68);
+	display: inline-block;
 }
 
 /* Inner end */
-
-
 .default-section {
 	padding: 135px 0;
 }
 .btn {
 	/* общие стили для всех кнопок */
 	display: inline-block;
-	/* font-size: 1.17rem; */
 	letter-spacing: .2em;
 	text-transform: uppercase;
-    /* font-family: 'mullerregular', sans-serif; */
-    color: #111;
-    border: 2px solid transparent;
-    cursor: pointer;
+    font-family: 'open_sansregular', Helvetica, sans-serif;
+	border-radius: 2px;
+	cursor: pointer;
 }
 .btn-default {
 	/* стили для черной кнопки */
 	padding: 0 20px;
 	font-size: .87rem;
-	line-height: 2.33rem;
+	line-height: 2.4rem;
+	background-color: #323232;
+	color: #fff;
 }
 .btn-large {
 	/* для кнопок серых и больших */
 	padding: 0 40px;
 	font-size: .93rem;
 	line-height: 2.67rem;
+	background-color: #cfcfcf;
+	color: #111;
 }
 .btn-small {
 	 /* для мал кнопок*/
 	padding: 0 15px;
 	font-size: .73rem;
-	line-height: 2rem;
+	line-height: 1.73rem;
+	background-color: #e5e5e5;
+	color: #777;
 }
 
 .title {
 	font-size: 1.2rem;
+	line-height: 1.73rem;
 	text-transform: uppercase;
 	color: #111;
 	letter-spacing: .5em;
 	font-weight: normal;
-	margin-bottom: 75px;
-	/* Add Dosis regular */
+	margin-bottom: 60px;
+	font-family: 'dosisregular', Helvetica, sans-serif;
 }
 .title.title-light {
 	letter-spacing: .3em;
-	/* add Dosis light font-family */
+	font-family: 'dosislight', Helvetica, sans-serif;
 }
 .title.title-white {
 	color: #fff;
 	letter-spacing: .3em;
-	/* add Dosis light font-family*/
+	font-family: 'dosislight', Helvetica, sans-serif;
 }
 /* Default component end */
 /* Custom style start */
 
 /* ===== About studio start ===== */
-/* font-family: Open Sans light; */
 .about-studio .row + .row {
 	margin-top: 100px;
 }
@@ -260,31 +314,43 @@ button {
 	display: block;
 }
 
+blockquote {
+	line-height: 2.53rem;
+}
+
 blockquote span {
     font-size: .73rem;
-    line-height: 2.53rem;
+	font-family: 'open_sansregular', Helvetica, sans-serif;	
     letter-spacing: .2em;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	margin-top: 15px;
+    display: inline-block;
 }
 
 blockquote p {
 	font-size: 1.6rem;
-    line-height: 2.53rem;
-    /* font-family: Open Sans light; */
 }
 
 .about-studio .default-text {
     line-height: 1.73rem;
 }
 
+.about-studio .team-item-photo {
+	height: 450px;
+}
+
+.about-studio .team-item-photo img {
+	max-height: 100%;
+}
 
 .about-studio .team-item-info {
 	letter-spacing: .4em;
+	font-family: 'dosisregular', Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
 .about-studio .team-item-name {
-	margin: 30px 0 15px;
+	margin: 25px 0 10px;
 }
 .about-studio .team-item-role {	
 	font-size: .8rem;
@@ -303,18 +369,18 @@ blockquote p {
 
 .lets-talk .title {
 	line-height: 1.73rem;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .lets-talk .default-text {
 	color: rgba(255, 255, 255, .7);
 	line-height: 1.73rem;
-	margin-bottom: 40px;
+	margin-bottom: 36px;
 }
 /* ===== Lets talk end ===== */
 /* ===== Why choose us start ===== */
 .why-choose-us .row + .row {
-	margin-top: 75px;
+	margin-top: 60px;
 }
 
 .why-choose-us .default-text {
@@ -322,14 +388,15 @@ blockquote p {
 }
 
 .why-choose-us .advantage-icon {
-	line-height: 3.67rem;
-	margin-bottom: 30px; 
+	font-size: 3.33rem;
+	margin: 15px 0 20px; 
 }
 
 .why-choose-us .advantage-title {
 	font-size: .93rem;
+	font-family: 'dosisregular', Helvetica, sans-serif;
 	letter-spacing: .4em;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 	text-transform: uppercase;
 }
 
