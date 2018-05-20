@@ -154,6 +154,7 @@ button {
 .bg-grey {
     background-color: #cfcfcf;
 }
+
 .bg-darkgrey {
 	background-color: #323232;
 }
@@ -248,9 +249,15 @@ button {
 }
 
 /* Inner end */
+
 .default-section {
 	padding: 135px 0;
 }
+
+.small-section {
+    padding: 70px 0;
+}
+
 .btn {
 	/* общие стили для всех кнопок */
 	display: inline-block;
@@ -304,16 +311,6 @@ button {
 	letter-spacing: .3em;
 	font-family: 'dosislight', Helvetica, sans-serif;
 }
-/* Default component end */
-/* Custom style start */
-
-/* ===== About studio start ===== */
-.about-studio .row + .row {
-	margin-top: 100px;
-}
-.team-item-info span {
-	display: block;
-}
 
 blockquote {
 	line-height: 2.53rem;
@@ -330,6 +327,16 @@ blockquote span {
 
 blockquote p {
 	font-size: 1.6rem;
+}
+/* Default component end */
+/* Custom style start */
+
+/* ===== About studio start ===== */
+.about-studio .row + .row {
+	margin-top: 100px;
+}
+.team-item-info span {
+	display: block;
 }
 
 .about-studio .default-text {
@@ -372,15 +379,26 @@ blockquote p {
 	text-align: center;
 }
 
+.services-tab ul li.ui-state-active {
+	color: #111;
+}
+
 .services-tab ul li span {
 	display: block;
 }
 
 .services-tab ul li a span:last-child {
+	text-transform: uppercase;
+    font-size: 0.93rem;
+    letter-spacing: .4em;
 	margin-top: 30px;
-	 /* TBD: check this size  */
+	font-family: 'dosisregular', Helvetica, sans-serif;
 }
 
+.services-tab a span:first-of-type {
+	font-size: 3.33rem;
+	margin: 55px 0 20px;
+}
 /* ===== Services end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper {
@@ -402,6 +420,70 @@ blockquote p {
 	margin-bottom: 36px;
 }
 /* ===== Lets talk end ===== */
+
+
+/* ===== Portfolio start ===== */
+
+.default-section.portfolio {
+	padding-bottom: 10px;
+}
+
+.portfolio .portfolio-content {
+	max-width: 800px;
+	margin-bottom: 70px;
+	display: inline-block;
+}
+
+.portfolio .default-text {
+	line-height: 1.73rem;
+	/* check color for all default-texts */
+	color: rgba(119, 119, 119, .7);
+}
+
+.portfolio ul {
+	overflow: hidden;
+	width: 580px;
+	display: inline-block;
+	margin-bottom: 45px;
+}
+
+.portfolio ul li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.portfolio ul li.ui-state-active {
+	color: #111;
+}
+
+.portfolio ul li span {
+	display: block;
+}
+
+.portfolio ul li a span {
+	text-transform: uppercase;
+    font-size: 0.87rem;
+    letter-spacing: .4em;
+	font-family: 'dosisregular', Helvetica, sans-serif;
+}
+
+.portfolio .portfolio-tabs img:hover {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* ===== Portfolio end ===== */
+
+/* ===== Like our works start ===== */
+
+.like-our-works .title {
+	margin-bottom: 15px;
+}
+
+/* ===== Like our works end ===== */
+
+
 /* ===== Why choose us start ===== */
 .why-choose-us .row + .row {
 	margin-top: 60px;
@@ -425,4 +507,15 @@ blockquote p {
 }
 
 /* ===== Why choose us end ===== */
+
+/* ===== Subscribe start ===== */
+.subscribe {
+	background-color:rgba(17, 17, 17, .03);
+}
+
+.subscribe .title {
+	margin-bottom: 15px;
+}
+/* ===== Subscribe end ===== */
+
 /* Custom style end */
