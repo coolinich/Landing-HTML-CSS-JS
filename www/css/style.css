@@ -436,7 +436,6 @@ blockquote p {
 
 .portfolio .default-text {
 	line-height: 1.73rem;
-	/* check color for all default-texts */
 	color: rgba(119, 119, 119, .7);
 }
 
@@ -468,9 +467,26 @@ blockquote p {
 	font-family: 'dosisregular', Helvetica, sans-serif;
 }
 
-.portfolio .portfolio-tabs img:hover {
+.portfolio .portfolio-tabs .portfolio-images {
+	width: 100%;
+}
+
+.portfolio .portfolio-tabs .portfolio-images .portfolio-img {
+	float: left;
+	width: 33.333333333%;
+	height: 345px;
+}
+
+
+.portfolio .portfolio-tabs .portfolio-images img {
+	max-height: 100%;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.portfolio .portfolio-tabs img:hover {
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 /* ===== Portfolio end ===== */
