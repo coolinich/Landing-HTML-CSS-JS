@@ -524,6 +524,84 @@ blockquote p {
 
 /* ===== Why choose us end ===== */
 
+/* ===== Reviews start ===== */
+
+.reviews .title.title-white {
+	margin-bottom: 30px;
+}
+
+.reviews .review-icon {
+	font-size: 2rem;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.reviews .review-wrapper p {
+	max-width: 740px;
+	display: inline-block;
+	color: rgba(255, 255, 255, .75);
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.review-author {
+	color: rgba(255, 255, 255, .3);
+	margin-top: 10px;
+} 
+
+.reviews-carousel {
+	padding: 140px 0;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.slick-arrow.slick-prev {
+    left: 0;
+}
+
+.slick-arrow.slick-next {
+	right: 0;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.slick-dots li + li {
+	margin-left: 5px;
+}
+
+.slick-dots li button {
+	color: transparent;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	background-color: #ccc;
+}
+
+.slick-dots li.slick-active button {
+	background-color: transparent;
+	width: 9px;
+	height: 9px;
+}
+
+/* ===== Reviews end ===== */
+
 /* ===== Subscribe start ===== */
 .subscribe {
 	background-color:rgba(17, 17, 17, .03);
