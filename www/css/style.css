@@ -168,12 +168,7 @@ button {
 #header {
     overflow: hidden;
 	padding: 25px 0;
-	line-height: 1.67rem;
-	font-size: .73rem;
-	font-family: 'open_sansregular', Helvetica, sans-serif;
-	color: rgba(255, 255, 255, .75);
-	letter-spacing: .3em;
-    position: fixed;
+	position: fixed;
     left: 0;
     top: 0;
 	width: 100%;
@@ -181,7 +176,6 @@ button {
 }
 
 #header .container-fluid {
-    max-width: 1560px;
     margin: 0 auto;
 } 
 
@@ -197,7 +191,11 @@ button {
 #header .header-nav {
 	float: right;
 	margin-top: .47rem;
+	line-height: 1.67rem;
 	font-size: .73rem;
+	font-family: 'open_sansregular', Helvetica, sans-serif;
+	color: rgba(255, 255, 255, .75);
+	letter-spacing: .3em;
 }
 
 #header .header-nav li {
@@ -230,6 +228,10 @@ button {
     vertical-align: middle;
 }
 
+.inner-title {
+	margin-bottom: 50px;
+}
+
 .inner-title h1 {
 	font-family: 'dosisregular', Helvetica, sans-serif;
 	color: rgba(254, 254, 254, .9);
@@ -238,11 +240,10 @@ button {
 	letter-spacing: 1.7em;
 	text-transform: uppercase;
 	font-weight: normal;
-    margin-bottom: 50px;
     display: inline-block;
 }
 
-.inner-description span {
+.inner-description {
 	font-size: 1.27rem;
 	color: rgba(254, 254, 254, .68);
 	display: inline-block;
@@ -474,12 +475,13 @@ blockquote p {
 .portfolio .portfolio-tabs .portfolio-images .portfolio-img {
 	float: left;
 	width: 33.333333333%;
-	height: 345px;
+	/* height: 345px; */
 }
 
 
 .portfolio .portfolio-tabs .portfolio-images img {
-	max-height: 100%;
+	/* max-height: 100%; */
+	width: 100%;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
