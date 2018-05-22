@@ -425,6 +425,13 @@ blockquote p {
 
 /* ===== Portfolio start ===== */
 
+.portfolio-images::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+
 .default-section.portfolio {
 	padding-bottom: 10px;
 }
