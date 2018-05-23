@@ -66,6 +66,12 @@ button {
 	border: none;
 	cursor: pointer;
 }
+
+textarea {
+	resize: vertical;
+}
+
+
 /* Grid layout start */
 .container {
 	max-width: 1200px;
@@ -159,7 +165,11 @@ button {
 	background-color: #323232;
 }
 
-
+.mx-auto {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 /* Default classes end */
@@ -329,6 +339,56 @@ blockquote span {
 blockquote p {
 	font-size: 1.6rem;
 }
+
+.rhomb-icon {
+	display: inline-block;
+	width: 23px;
+	line-height: 23px;
+	font-size: .8rem;
+	text-align: center;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+
+.rhomb-icon > * {
+    transform: rotate(-45deg);
+}
+
+
+.rhomb-icon.black-icon {
+	color: #fff;
+	background-color: #111;
+}
+
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 40px;
+	font-size: .8rem;
+	text-transform: uppercase;
+	font-family: 'open_sansregular', Helvetica, sans-serif;
+	letter-spacing: .2em;
+	line-height: 1.73rem;
+	color: #777;
+	padding: 0 13px;
+	background: #fff;
+}
+
+textarea.form-control {
+	min-height: 90px;
+	padding-top: 10px;
+}
+
+.form-info {
+	float: left;
+	font-family: 'open_sansregular', Helvetica, sans-serif;
+	font-size: .73rem;
+	line-height: 1.73rem; 
+	color: #aaa;
+}
+
+
 /* Default component end */
 /* Custom style start */
 
@@ -620,5 +680,64 @@ blockquote p {
 	margin-bottom: 15px;
 }
 /* ===== Subscribe end ===== */
+
+/* ===== Contacts start ===== */
+.rhomb-icon > .fa-phone {
+    transform: rotate(45deg);
+}
+
+.contact-item .rhomb-icon {
+	vertical-align: middle;
+}
+.contact-item-content {
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+.contact-item-content span {
+	display: block;
+}
+
+.contact-item-content .contact-title {
+	font-family: 'dosisregular', Helvetica, sans-serif;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+}
+
+.contact-item-content .contact-data {
+	line-height: 1.6rem;
+}
+
+
+.form-row {
+	margin: 0 -5px;
+}
+
+.form-col {
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+
+.contact-form {
+	margin-top: 80px;
+}
+
+.contact-form .form-control + .form-control {
+	margin-top: 10px;
+}
+
+.form-submit .form-info {
+	margin-top: 20px;
+}
+
+.form-submit button {
+	float: right;
+	margin-top: 20px;
+}
+
+/* ===== Contacts end ===== */
 
 /* Custom style end */
