@@ -729,15 +729,49 @@ textarea.form-control {
 	margin-top: 10px;
 }
 
-.form-submit .form-info {
+/* .form-submit .form-info {
+	margin-top: 20px;
+} */
+
+.form-submit {
 	margin-top: 20px;
 }
+
+
 
 .form-submit button {
 	float: right;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 }
 
 /* ===== Contacts end ===== */
+
+/* ===== Map start ===== */
+.map-container {
+	position: relative;
+}
+
+#map {
+	width: 100%;
+	height: 410px;
+}
+
+.on-map-block {
+	position: absolute;
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.9);
+}
+
+.map-container:hover .on-map-block {
+	opacity: 0;
+} 
+
+
+/* ===== Map end ===== */
+
 
 /* Custom style end */
