@@ -420,8 +420,6 @@ blockquote p {
 	background-color: #111;
 }
 
-
-
 .form-control {
 	width: 100%;
 	border: 1px solid #e5e5e5;
@@ -448,8 +446,6 @@ textarea.form-control {
 	line-height: 1.73rem; 
 	color: #aaa;
 }
-
-
 
 /* Default component end */
 /* Custom style start */
@@ -889,10 +885,22 @@ textarea.form-control {
 	background-color: rgba(0,0,0,.9);
 }
 
+.on-map-block {
+	display: inline-block;
+	width: 100%;
+}
 
+.on-map-block-content {
+	/* display: inline-block; */
+	padding: 170px 0 150px;
+}
 
+/* 
+Хотела сделать вертикальное выравнивание через before, оно-то даже выравнивало, 
+но когда пыталась сделать отступ между элементами, то верхний элемент полз вверх (иконка),
+а тайтл так и оставался ровно по центру.
 
-/* .on-map-block-content::before {
+    .on-map-block::before {
     content: '';
     display: inline-block;
     height: 100%;
@@ -900,16 +908,13 @@ textarea.form-control {
     margin-left: -4px;
 } */
 
-/* .on-map-block-content {
-	width: 100%;
-} */
-
 .map-title {
 	font-size: 1.07rem;
 	letter-spacing: .3em;
 	font-family: 'dosisregular', Helvetica, sans-serif;
 	color: rgba(255, 255, 255, .75);
-	display: block;
+	margin-top: 20px;
+	display: inline-block;
 
 }
 
