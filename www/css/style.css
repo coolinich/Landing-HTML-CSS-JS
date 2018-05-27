@@ -157,6 +157,10 @@ textarea {
 	background-color: #e5e5e5;
 }
 
+.bg-lightgrey-transaprent {
+	background-color:rgba(17, 17, 17, .03);
+}
+
 .bg-grey {
     background-color: #cfcfcf;
 }
@@ -406,8 +410,17 @@ blockquote p {
 }
 
 .rhomb-icon.black-border-icon {
+	color: #111;
+	background-color: transparent;
 	border: 1px solid #111;
 }
+
+.rhomb-icon.black-border-icon:hover {
+	color: #fff;
+	background-color: #111;
+}
+
+
 
 .form-control {
 	width: 100%;
@@ -719,23 +732,23 @@ textarea.form-control {
 }
 
 /* ===== Reviews end ===== */
-.latest-news h3 {
+.latest-news-title h3 {
 	display: inline-block;
 }
 
-.latest-news .container > a {
+.latest-news-title a {
 	float: right;
+}
+
+.latest-news-title a span {	
+	font-size: .73rem;
+	letter-spacing: .4em;
+	color: #999;
 }
 
 .latest-news a span, .news-item .news-item-author {
 	font-family: 'dosisregular', Helvetica, sans-serif;
 	text-transform: uppercase;
-}
-
-.latest-news .container > a span {	
-	font-size: .73rem;
-	letter-spacing: .4em;
-	color: #999;
 }
 
 .news-item {
@@ -778,12 +791,17 @@ textarea.form-control {
 /*===== Latest news end =====*/
 
 /* ===== Subscribe start ===== */
-.subscribe {
-	background-color:rgba(17, 17, 17, .03);
-}
-
 .subscribe .title {
 	margin-bottom: 15px;
+}
+
+.form-subscribe input {
+	max-width: 295px;
+}
+
+.form-subscribe span {
+	display: block;
+    margin-top: 10px;
 }
 /* ===== Subscribe end ===== */
 
@@ -872,17 +890,19 @@ textarea.form-control {
 }
 
 
-.on-map-block-content::before {
+
+
+/* .on-map-block-content::before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
     margin-left: -4px;
-}
+} */
 
-.on-map-block-content {
+/* .on-map-block-content {
 	width: 100%;
-}
+} */
 
 .map-title {
 	font-size: 1.07rem;
