@@ -339,8 +339,7 @@ textarea {
 /* Default component start */
 /* Header start */
 #header {
-    overflow: hidden;
-	padding: 25px 0;
+    padding: 25px 0;
 	position: fixed;
     left: 0;
     top: 0;
@@ -667,6 +666,16 @@ textarea.form-control {
 	letter-spacing: .4em;
 }
 
+@media (max-width: 767px){
+	.about-studio .team-item-photo {
+		height: 350px;
+	}
+
+	.team-item + .team-item {
+		margin-top: 20px;
+	}
+}
+
 /* ===== About studio end ===== */
 
 /* ===== Services start ===== */
@@ -808,6 +817,12 @@ textarea.form-control {
 @media (max-width: 991px) {
 	.portfolio .portfolio-tabs .portfolio-images .portfolio-img {
 		width: 50%;
+	}
+}
+
+@media (max-width: 576px) {
+	.portfolio .portfolio-tabs .portfolio-images .portfolio-img {
+		width: 100%;
 	}
 }
 
