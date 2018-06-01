@@ -495,8 +495,7 @@ textarea {
 	color: #999;
 }
 /* Footer end */
-/* Scroll to the next slide start */
-/* Temporaly it works as toTop */
+/* Scroll to About section from inner start */
 .scroll-about {
 	width: 20px;
 	height: 20px;
@@ -504,7 +503,7 @@ textarea {
 	border: 1px solid transparent;
 	border-radius: 2px;
 	transform: rotate(45deg);
-	position: fixed;
+	position: absolute;
 	right: 50%;
 }
 
@@ -514,7 +513,7 @@ textarea {
     right: 1px;
     transform: rotate(45deg);
 }
-/* Scroll to the next slide end */
+/* Scroll to About section from inner end */
 /* Scroll to top start */
 .scroll-top {
 	font-size: 2.33rem;
@@ -522,8 +521,6 @@ textarea {
 	right: 20px;
 	display: none;
 }	
-
-
 /* Scroll to top end */
 
 
@@ -818,7 +815,7 @@ textarea.form-control {
 
 @media (max-width: 767px){
 	.about-studio .team-item-photo {
-		text-align: center;
+        text-align: center;
 	}
 
 	.about-studio .default-text {
@@ -829,13 +826,7 @@ textarea.form-control {
 	.about-studio .team-item {
 		margin-top: 5px;
 	}
-
-	/* .container-for-flip.team-item-skills {
-		width: 33.333333333%;
-		margin: auto;
-	} */
-
-
+	
 }
 
 /* ===== About studio end ===== */
