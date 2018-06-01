@@ -1,33 +1,6 @@
 const header = $('#header'); // находим элемент
-const inner = $('.inner');
-const scrollToTop = $('.scroll-top');
-const scrollToAbout = $('.scroll-about'); 
 const windowHeight = $(window).height(); // узнаем высоту экран
 const headerHeight = header.outerHeight(); // узнаем высоту шапки
-const innerHeight = inner.outerHeight();
-
-// Show scroll button on inner for scrolling to About
-function onLoad(){
-     scrollToAbout.css({
-         'top': (innerHeight - 35)
-     });
-}
-
-// Scroll to top by click on scroll-top button
-function onScrollTopBtn(e) {
-    let pos = $(window).scrollTop(); 
-    if (pos > windowHeight) { 
-        scrollToTop.css({
-            'display': 'block',
-            'top': (windowHeight - 45)
-        });
-    }
-    if (pos < innerHeight) {
-        scrollToTop.css({
-            'display': 'none'
-        });
-    }
-} 
 
 function onScroll(e) {
     let pos = $(window).scrollTop(); // определяем позицию скрола 
@@ -56,9 +29,7 @@ function onScroll(e) {
     }
 }
 
-$(document).ready(onLoad); //set initial position for scrollToAbout button
 $(window).on('scroll', onScroll); // вешаем событие на скролл в окне
-$(window).on('scroll', onScrollTopBtn); //event on scroll-top button
 
 // Scroll to element
 const scrollBtn = $('[data-scroll]'); // ищем все элементы у которого есмть атрибут data-scroll
