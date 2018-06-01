@@ -26,5 +26,25 @@ function onScrollTopBtn(e) {
     }
 } 
 
+//Scroll to menu-item section
+function scrollTo(){
+    // Scroll to element
+    const scrollBtn = $('[data-scroll]');
+
+    function onScroll(e) {
+        e.preventDefault();
+
+        // Close slick nav
+        $('.header-nav').slicknav('close');
+        let target = $(this).attr('data-scroll');
+        let dist = $(target).offset().top;
+        $('html, body').animate({scrollTop: dist}, 1000, 'swing');
+    }
+
+    scrollBtn.on('click', onScroll);
+}
+
+
+$(window).on('load', scrollTo); //scroll to element with data-scroll attribute
 $(document).ready(onLoad); //set initial position for scrollToAbout button
 $(window).on('scroll', onScrollTopBtn); //event on scroll-top button
