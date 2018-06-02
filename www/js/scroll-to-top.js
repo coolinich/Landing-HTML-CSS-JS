@@ -1,13 +1,14 @@
 const inner = $('.inner');
 const scrollToTop = $('.scroll-top');
 const scrollToAbout = $('.scroll-about'); 
-const innerHeight = inner.outerHeight();
+var innerHeight;
 
-// Show scroll button on inner for scrolling to About
-function onLoad(){
-     scrollToAbout.css({
-         'top': (innerHeight - 35)
-     });
+// Place scroll button on inner for scrolling to About
+function scrollAbout(){
+    innerHeight = inner.outerHeight();
+    scrollToAbout.css({
+         'top': innerHeight - 35
+    });
 }
 
 // Scroll to top by click on scroll-top button
@@ -46,5 +47,7 @@ function scrollTo(){
 
 
 $(window).on('load', scrollTo); //scroll to element with data-scroll attribute
-$(document).ready(onLoad); //set initial position for scrollToAbout button
 $(window).on('scroll', onScrollTopBtn); //event on scroll-top button
+$(document).ready(scrollAbout); //set initial position for scrollToAbout button
+$(window).on('orientationchange', scrollAbout); //set position for scrollToAbout button
+window.onresize = scrollAbout; //set position for scrollToAbout button
