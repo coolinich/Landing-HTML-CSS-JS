@@ -1,7 +1,7 @@
 const inner = $('.inner');
 const scrollToTop = $('.scroll-top');
 const scrollToAbout = $('.scroll-about'); 
-var innerHeight;
+var innerHeight = inner.outerHeight();
 
 // Place scroll button on inner for scrolling to About
 function scrollAbout(){
