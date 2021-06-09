@@ -66,13 +66,12 @@ button {
 	border: none;
 	cursor: pointer;
 }
-
 textarea {
 	resize: vertical;
 }
 
-
 /* Grid layout start */
+
 .container {
 	max-width: 1200px;
 	padding: 0 15px;
@@ -210,7 +209,7 @@ textarea {
 	}
 	.d-none-md{
 		display: none;
-	} 
+	}
 }
 
 @media (max-width: 767px) {
@@ -249,7 +248,7 @@ textarea {
 	}
 	.col-sm-12{
 		width: 100%
-	}		
+	}
 }
 
 @media (max-width: 576px) {
@@ -290,8 +289,11 @@ textarea {
 		width: 100%
 	}
 }
+
 /* Grid layout end */
+
 /* Default classes start */
+
 .text-center {
 	text-align: center;
 }
@@ -338,7 +340,9 @@ textarea {
 /* Default classes end */
 
 /* Default component start */
+
 /* Header start */
+
 #header {
     padding: 25px 0;
 	position: absolute;
@@ -350,7 +354,7 @@ textarea {
 
 #header .container-fluid {
     margin: 0 auto;
-} 
+}
 
 #header .logo {
 	float: left;
@@ -387,8 +391,11 @@ textarea {
 		display: block;
 	}
 }
+
 /* Header end */
+
 /* Inner start */
+
 .inner {
     background: url('../img/inner-bg.jpg') no-repeat center / cover;
     height: 100vh;
@@ -454,12 +461,14 @@ textarea {
 	}
 
 }
+
 /* Inner end */
+
 /* Footer start */
+
 .footer-content-wrapper {
 	padding: 135px 0 50px;
 }
-
 
 #footer .footer-nav {
 	display: inline-block;
@@ -493,8 +502,11 @@ textarea {
 	font-size: .73rem;
 	color: #999;
 }
+
 /* Footer end */
+
 /* Scroll to About section from inner start */
+
 .scroll-about {
 	width: 20px;
 	height: 20px;
@@ -512,16 +524,19 @@ textarea {
     right: 1px;
     transform: rotate(45deg);
 }
+
 /* Scroll to About section from inner end */
+
 /* Scroll to top start */
+
 .scroll-top {
 	font-size: 2.33rem;
 	position: fixed;
 	right: 20px;
 	display: none;
-}	
-/* Scroll to top end */
+}
 
+/* Scroll to top end */
 
 .default-section {
 	padding: 135px 0;
@@ -531,8 +546,8 @@ textarea {
     padding: 70px 0;
 }
 
+/* common styles for all buttons */
 .btn {
-	/* общие стили для всех кнопок */
 	display: inline-block;
 	letter-spacing: .2em;
 	text-transform: uppercase;
@@ -540,24 +555,27 @@ textarea {
 	border-radius: 2px;
 	cursor: pointer;
 }
+
+/* styles for dark button */
 .btn-default {
-	/* стили для черной кнопки */
 	padding: 0 20px;
 	font-size: .87rem;
 	line-height: 2.4rem;
 	background-color: #323232;
 	color: #fff;
 }
+
+/* styles for big grey buttons */
 .btn-large {
-	/* для кнопок серых и больших */
 	padding: 0 40px;
 	font-size: .93rem;
 	line-height: 2.67rem;
 	background-color: #cfcfcf;
 	color: #111;
 }
+
+ /* styles for small buttons */
 .btn-small {
-	 /* для мал кнопок*/
 	padding: 0 15px;
 	font-size: .73rem;
 	line-height: 1.73rem;
@@ -575,10 +593,12 @@ textarea {
 	margin-bottom: 60px;
 	font-family: 'dosisregular', Helvetica, sans-serif;
 }
+
 .title.title-light {
 	letter-spacing: .3em;
 	font-family: 'dosislight', Helvetica, sans-serif;
 }
+
 .title.title-white {
 	color: #fff;
 	letter-spacing: .3em;
@@ -591,7 +611,7 @@ blockquote {
 
 blockquote span {
     font-size: .73rem;
-	font-family: 'open_sansregular', Helvetica, sans-serif;	
+	font-family: 'open_sansregular', Helvetica, sans-serif;
     letter-spacing: .2em;
 	text-transform: uppercase;
 	margin-top: 15px;
@@ -615,7 +635,6 @@ blockquote p {
 .rhomb-icon > * {
     transform: rotate(-45deg);
 }
-
 
 .rhomb-icon.black-icon {
 	color: #fff;
@@ -661,20 +680,18 @@ textarea.form-control {
 .form-info {
 	font-family: 'open_sansregular', Helvetica, sans-serif;
 	font-size: .73rem;
-	line-height: 1.73rem; 
+	line-height: 1.73rem;
 	color: #aaa;
 }
-
 
 @media (max-width: 767px){
 	.default-section {
 		padding: 75px 0;
 	}
-	
+
 	.small-section {
 		padding: 50px 0;
 	}
-
 }
 
 @media (max-width: 576px){
@@ -687,16 +704,18 @@ textarea.form-control {
 		font-size: 1.2rem;
 		text-align: center;
 	}
-
 }
 
 /* Default component end */
+
 /* Custom style start */
 
-/* ===== About studio start ===== */
+/* == About studio start == */
+
 .about-studio .row + .row {
 	margin-top: 100px;
 }
+
 .team-item-info span {
 	display: block;
 }
@@ -737,7 +756,7 @@ textarea.form-control {
 	line-height: 2.53rem;
 	letter-spacing: .2em;
 	color: rgba(255, 255, 255, .9);
-	font-family: 'open_sansregular', Helvetica, sans-serif;	
+	font-family: 'open_sansregular', Helvetica, sans-serif;
 }
 
 .container-for-flip {
@@ -791,7 +810,7 @@ textarea.form-control {
 .about-studio .team-item-name {
 	margin: 25px 0 10px;
 }
-.about-studio .team-item-role {	
+.about-studio .team-item-role {
 	font-size: .8rem;
 	letter-spacing: .4em;
 }
@@ -813,9 +832,7 @@ textarea.form-control {
 	.about-studio .team-item-skills .default-text {
 		text-align: justify;
 	}
-
 }
-
 
 @media (max-width: 767px){
 	.about-studio .team-item-photo {
@@ -830,12 +847,11 @@ textarea.form-control {
 	.about-studio .team-item {
 		margin-top: 5px;
 	}
-	
 }
 
-/* ===== About studio end ===== */
+/* == About studio end == */
 
-/* ===== Services start ===== */
+/* == Services start == */
 .services-tab ul {
 	overflow: hidden;
 	margin-bottom: 70px;
@@ -894,8 +910,10 @@ textarea.form-control {
 		text-align: center;
 	}
 }
-/* ===== Services end ===== */
-/* ===== Lets talk start ===== */
+/* == Services end ==*/
+
+/* ==Lets talk start == */
+
 .lets-talk-wrapper {
 	padding-top: 140px;
 	padding-bottom: 140px;
@@ -921,17 +939,15 @@ textarea.form-control {
 	}
 }
 
-/* ===== Lets talk end ===== */
+/* == Lets talk end ==*/
 
-
-/* ===== Portfolio start ===== */
+/* == Portfolio start == */
 
 .portfolio-images::after {
 	content: '';
 	clear: both;
 	display: block;
 }
-
 
 .default-section.portfolio {
 	padding-bottom: 10px;
@@ -983,12 +999,9 @@ textarea.form-control {
 .portfolio .portfolio-tabs .portfolio-images .portfolio-img {
 	float: left;
 	width: 33.333333333%;
-	/* height: 345px; */
 }
 
-
 .portfolio .portfolio-tabs .portfolio-images img {
-	/* max-height: 100%; */
 	width: 100%;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -1014,27 +1027,25 @@ textarea.form-control {
 	}
 
 	.portfolio ul li {
-		width: 100%;		
+		width: 100%;
 	}
 
 	.portfolio ul li + li {
-		margin-top: 10px;		
+		margin-top: 10px;
 	}
-
 }
 
-/* ===== Portfolio end ===== */
+/* == Portfolio end == */
 
-/* ===== Like our works start ===== */
+/* == Like our works start == */
 
 .like-our-works .title {
 	margin-bottom: 15px;
 }
 
-/* ===== Like our works end ===== */
+/* == Like our works end == */
 
-
-/* ===== Why choose us start ===== */
+/* == Why choose us start == */
 .why-choose-us .row + .row {
 	margin-top: 60px;
 }
@@ -1045,7 +1056,7 @@ textarea.form-control {
 
 .why-choose-us .advantage-icon {
 	font-size: 3.33rem;
-	margin: 15px 0 20px; 
+	margin: 15px 0 20px;
 }
 
 .why-choose-us .advantage-title {
@@ -1063,9 +1074,10 @@ textarea.form-control {
 	}
 }
 
-/* ===== Why choose us end ===== */
+/* == Why choose us end == */
 
-/* ===== Reviews start ===== */
+/* == Reviews start == */
+
 .reviews {
 	overflow: hidden;
 }
@@ -1091,7 +1103,7 @@ textarea.form-control {
 .review-author {
 	color: rgba(255, 255, 255, .3);
 	margin-top: 10px;
-} 
+}
 
 .reviews-carousel {
 	padding: 140px 0;
@@ -1151,8 +1163,6 @@ textarea.form-control {
     right: 0;
 }
 
-
-
 .slick-dots {
 	position: absolute;
 	bottom: 30px;
@@ -1188,25 +1198,25 @@ textarea.form-control {
 @media (max-width: 991px){
 	.reviews .review-wrapper p {
 		max-width: 600px;
-	}	
+	}
 }
 
 @media (max-width: 767px){
 	.reviews .review-wrapper p {
 		max-width: 480px;
 		font-size: 1rem;
-	}	
+	}
 }
 
 @media (max-width: 576px){
 	.reviews .review-wrapper p {
 		max-width: 250px;
 		font-size: .8rem;
-	}	
+	}
 }
 
+/* == Reviews end == */
 
-/* ===== Reviews end ===== */
 .latest-news-title h3 {
 	display: inline-block;
 }
@@ -1215,7 +1225,7 @@ textarea.form-control {
 	float: right;
 }
 
-.latest-news-title a span {	
+.latest-news-title a span {
 	font-size: .73rem;
 	letter-spacing: .4em;
 	color: #999;
@@ -1277,18 +1287,17 @@ textarea.form-control {
 	}
 
 	.latest-news-title h3 {
-		/* margin-bottom: 10px; */
 		display: block;
 	}
-	
+
 	.latest-news-title a {
 		float: none;
 	}
 }
 
-/*===== Latest news end =====*/
+/* == Latest news end == */
 
-/* ===== Subscribe start ===== */
+/* == Subscribe start == */
 .subscribe .title {
 	margin-bottom: 15px;
 }
@@ -1305,17 +1314,16 @@ textarea.form-control {
 @media (max-width: 576px){
 	.form-subscribe input {
 		max-width: 100%;
-	}	
+	}
 	.form-subscribe button {
 		margin-top: 10px;
 		width: 100%;
 	}
 }
 
+/* == Subscribe end == */
 
-/* ===== Subscribe end ===== */
-
-/* ===== Contacts start ===== */
+/* == Contacts start == */
 .rhomb-icon > .fa-phone {
     transform: rotate(45deg);
 }
@@ -1323,6 +1331,7 @@ textarea.form-control {
 .contact-item .rhomb-icon {
 	vertical-align: middle;
 }
+
 .contact-item-content {
 	display: inline-block;
 	margin-left: 15px;
@@ -1343,7 +1352,6 @@ textarea.form-control {
 .contact-item-content .contact-data {
 	line-height: 1.6rem;
 }
-
 
 .form-row {
 	margin: 0 -5px;
@@ -1377,7 +1385,6 @@ textarea.form-control {
 	float: right;
 }
 
-
 @media (max-width: 767px){
 	.contacts .title {
 		margin-bottom: 30px;
@@ -1396,7 +1403,6 @@ textarea.form-control {
     }
 }
 
-
 @media (max-width: 576px){
 	.contact-form .form-info {
 		float: none;
@@ -1411,11 +1417,11 @@ textarea.form-control {
 		margin-top: 10px;
 		overflow: auto;
 	}
-
 }
-/* ===== Contacts end ===== */
 
-/* ===== Map start ===== */
+/* == Contacts end == */
+
+/* == Map start == */
 .map-container {
 	position: relative;
 }
@@ -1445,19 +1451,6 @@ textarea.form-control {
 	padding: 170px 0 150px;
 }
 
-/* 
-Хотела сделать вертикальное выравнивание через before, оно-то даже выравнивало, 
-но когда пыталась сделать отступ между элементами, то верхний элемент полз вверх (иконка),
-а тайтл так и оставался ровно по центру.
-
-    .on-map-block::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-left: -4px;
-} */
-
 .map-title {
 	font-size: 1.07rem;
 	letter-spacing: .3em;
@@ -1465,7 +1458,6 @@ textarea.form-control {
 	color: rgba(255, 255, 255, .75);
 	margin-top: 20px;
 	display: inline-block;
-
 }
 
 .map-title i {
@@ -1476,10 +1468,8 @@ textarea.form-control {
 
 .map-container:hover .on-map-block {
 	opacity: 0;
-} 
+}
 
-
-/* ===== Map end ===== */
-
+/* == Map end == */
 
 /* Custom style end */

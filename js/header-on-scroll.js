@@ -1,25 +1,25 @@
-const header = $('#header'); // находим элемент
-const windowHeight = $(window).height(); // узнаем высоту экран
-const headerHeight = header.outerHeight(); // узнаем высоту шапки
+const header = $('#header');
+const windowHeight = $(window).height(); // find height of window
+const headerHeight = header.outerHeight();
 
 function onScroll(e) {
-    let pos = $(window).scrollTop(); // определяем позицию скрола 
+    let pos = $(window).scrollTop(); // find current position of scroll
 
-    if (pos > headerHeight + 100) { // если проскролели больше высоты шапки +100пикс
+    if (pos > headerHeight + 100) { // if user scrolled more than header height + 100px
         header.css({
             'position': 'fixed',
             'top': -(headerHeight + 50),
             'background-color': '#000'
         });
     }
-    if (pos > windowHeight) { // если проскролели больше высоты экрана
+    if (pos > windowHeight) {
         header.css({
             'top': '0',
             'transition': 'top .3s ease-out'
         });
     }
 
-    if (pos < headerHeight + 100) { // если проскролели меньше высоты шапки
+    if (pos < headerHeight + 100) {
         header.css({
             'position': 'absolute',
             'top': '0',
@@ -29,4 +29,4 @@ function onScroll(e) {
     }
 }
 
-$(window).on('scroll', onScroll); // вешаем событие на скролл в окне
+$(window).on('scroll', onScroll);
