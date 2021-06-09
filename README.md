@@ -1,7 +1,7 @@
 # Training project “Landing page“
 ## The task was to create responsive landing page.
 
-Markup was provided. 
+Design was provided. 
 Goals of project were following:
 * Master in HTML layout;
 * Learn and use power of CSS;
